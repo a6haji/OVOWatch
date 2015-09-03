@@ -1,0 +1,49 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "aly.haji99@gmail.com",
+    "longName": "OVO Watch",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/battery_blue_by_kevins555-d3ewlmo.png",
+                "name": "BATTERY_EMOJI",
+                "type": "png"
+            },
+            {
+                "file": "fonts/Late-Regular.ttf",
+                "name": "FONT_TOO_LATE_10",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Late-Regular.ttf",
+                "name": "FONT_TOO_LATE_25",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Late-Regular.ttf",
+                "name": "FONT_TOO_LATE_15",
+                "type": "font"
+            },
+            {
+                "file": "images/owl.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "OVO Watch",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "779f1705-b08b-4d9e-aca9-bdf30f8715f8",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
