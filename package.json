@@ -1,0 +1,61 @@
+{
+    "author": "aly.haji99@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "ovo-watch",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "OVO Watch",
+        "enableMultiJS": false,
+        "messageKeys": {},
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/ovo_round",
+                    "name": "IMAGE_BACKGROUND_2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/battery_blue_by_kevins555-d3ewlmo.png",
+                    "name": "BATTERY_EMOJI",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/owl.png",
+                    "name": "IMAGE_BACKGROUND",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/Late-Regular.ttf",
+                    "name": "FONT_TOO_LATE_10",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Late-Regular.ttf",
+                    "name": "FONT_TOO_LATE_25",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Late-Regular.ttf",
+                    "name": "FONT_TOO_LATE_15",
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "779f1705-b08b-4d9e-aca9-bdf30f8715f8",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}

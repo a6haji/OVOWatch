@@ -19,9 +19,13 @@ static GFont s_date_font;
 
 
 static void main_window_load(Window *window) {
+  //Get info about the Window
+  Layer *window_layer = window_get_root_layer(window);
+  GRect bounds = layer_get_bounds(window_layer);
+  
   //Create OVO GBitmap, then set to created BitmapLayer
-  s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND);
-  s_background_layer = bitmap_layer_create(GRect(0, 0, 144, 168));
+  s_background_bitmap = gbitmap_create_with_resource(PBL_IF_ROUND_ELSE(RESOURCE_ID_IMAGE_BACKGROUND_2, RESOURCE_ID_IMAGE_BACKGROUND));
+  s_background_layer = bitmap_layer_create(bounds);
   bitmap_layer_set_bitmap(s_background_layer, s_background_bitmap);
   layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(s_background_layer));
   
@@ -33,7 +37,7 @@ static void main_window_load(Window *window) {
   
   
   //Create the Time Textlayer
-  s_time_layer = text_layer_create(GRect (5, 130, 139, 50));
+  s_time_layer = text_layer_create(GRect (PBL_IF_ROUND_ELSE(20, 5), 130, 139, 50));
   text_layer_set_background_color(s_time_layer, GColorClear);
   text_layer_set_text_color(s_time_layer, GColorWhite);
   
@@ -49,7 +53,7 @@ static void main_window_load(Window *window) {
   
   
   //Create the Date Textlayer
-  s_date_layer = text_layer_create(GRect(5, 10, 139, 50));
+  s_date_layer = text_layer_create(GRect(PBL_IF_ROUND_ELSE(20, 5), PBL_IF_ROUND_ELSE(22, 10), 139, 50));
   text_layer_set_background_color(s_date_layer, GColorClear);
   text_layer_set_text_color(s_date_layer, GColorWhite);
   
